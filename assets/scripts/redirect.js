@@ -25,7 +25,7 @@
           </p>
 
           <div class="lilly-redirect__ctas">
-            <a href="index.html" 
+            <a href="https://lilly-estetica-poc.vercel.app/?redirect=false" 
                rel="noopener" 
                title="Acessar o site Lilly Estética" 
                class="lilly-redirect__cta lilly-redirect__cta--lilly">
@@ -34,10 +34,11 @@
 
             <span>ou</span>
 
-            <a href="https://lillymed.com.br" 
+            <a href="index.html" 
                rel="noopener" 
                title="Acessar o site Lilly Med" 
-               class="lilly-redirect__cta lilly-redirect__cta--jk">
+               class="lilly-redirect__cta lilly-redirect__cta--jk"
+               data-lilly-redirect-stay>
               Lilly Med JK Iguatemi - SP
             </a>
           </div>
@@ -72,10 +73,16 @@
     localStorage.setItem(storageKey, JSON.stringify({ lastAccess }));
   };
 
-  if (isTimeToShowModal()) {
+  if (!window.location.search.includes("redirect=false")) {
     loadCss();
     createHTML();
-  }
 
-  setTimeAccessed();
+    const stay = document.querySelector("[data-lilly-redirect-stay]");
+    stay.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const modalContainer = document.querySelector(".lilly-redirect");
+      modalContainer.remove();
+    });
+  }
 })();
