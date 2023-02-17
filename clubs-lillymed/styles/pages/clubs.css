@@ -1,0 +1,114 @@
+main {
+  margin-top: 100px;
+  padding: 32px 32px 160px;
+  border-radius: 16px 16px 0 0;
+  background: var(--color-base);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+  position: relative;
+}
+
+/* prefooter */
+
+footer.svelte-jptr6.svelte-jptr6 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 24px 24px;
+  border-radius: var(--border-radius-top);
+  box-shadow: var(--shadow-1);
+  background: var(--color-white);
+  display: flex;
+  z-index: 2;
+}
+
+a.svelte-jptr6.svelte-jptr6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  border-radius: 100px;
+  height: 48px;
+  padding: 8px 20px;
+  background: var(--color-whatsapp);
+  text-align: center;
+  color: var(--color-white);
+  font-weight: var(--weight-black);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.svelte-jptr6 span.svelte-jptr6 {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 32px 40px 12px;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row.svelte-8f85ye.svelte-8f85ye {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.row.svelte-8f85ye>span.svelte-8f85ye:first-child {
+  flex: 1;
+}
+
+.row.mensalidade.svelte-8f85ye>span.svelte-8f85ye:nth-child(2) {
+  font-weight: var(--weight-bold);
+}
+
+.tax-value.svelte-8f85ye.svelte-8f85ye {
+  text-transform: uppercase;
+}
+
+#texto-legal.svelte-10cbdru.svelte-10cbdru {
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-lg);
+  font-size: var(--size-xs);
+}
+
+#texto-legal.svelte-10cbdru p.svelte-10cbdru {
+  margin: 0;
+}
+
+a.svelte-m23qng.svelte-m23qng {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  border-radius: 100px;
+  padding: 8px 20px;
+  background: var(--color-white);
+  text-align: center;
+  color: var(--color-text);
+  font-size: var(--size-base);
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+}
+
+a.svelte-m23qng span.svelte-m23qng {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}

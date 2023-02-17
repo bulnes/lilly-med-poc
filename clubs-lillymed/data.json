@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "slug": "lillyclub",
+    "club": "Lilly Club",
+    "bgColor": "var(--color-pink-1)",
+    "titleColor": "var(--color-pink-3)",
+    "description": "Clube mais versátil da Lilly. Você se associa, paga mensalidades fixas e faz 1 ou 2 sessões por mês de 30 minutos de qualquer* tratamento e ainda tem descontos exclusivos nos outros tratamentos da Lilly.",
+    "moreInfoTitle": "Os melhores tratamentos",
+    "moreInfoSpecs": [
+      "Depilação a laser definitiva",
+      "Remoção de tatuagens",
+      "Clareamento de melasmas",
+      "Hollywood Peel",
+      "Rejuvenescimento facial e corporal",
+      "Secagem de vasinhos",
+      "Cicatrizes de acne",
+      "Redução de estrias e gordura localizada"
+    ],
+    "pricingTitle": "Conheça os planos",
+    "pricing": [
+      {
+        "name": "Lilly Club • 1 sessão/mês",
+        "taxes": "Grátis",
+        "membership": "R$ 139,90",
+        "session": "R$ 159,90"
+      },
+      {
+        "name": "Lilly Club • 2 sessões/mês",
+        "taxes": "Grátis",
+        "membership": "R$ 199,90",
+        "session": "R$ 129,90"
+      }
+    ],
+    "legalText": "Consulte validade e condições comerciais",
+    "legalExpirationDate": "",
+    "legalExceptions": "*Exceto Ultraformer, Criolipólise, Injetáveis e Musculares"
+  },
+  {
+    "id": 2,
+    "slug": "lillylaserclub",
+    "club": "Lilly Laser Club",
+    "bgColor": "var(--color-blue-1)",
+    "titleColor": "var(--color-blue-3)",
+    "description": "Clube para depilação a laser definitiva. Os membros pagam uma mensalidade fixa e faz 30 minutos de depilação a laser, nas áreas onde quiser, a cada 45 dias. E mais: descontos exclusivos nos outros tratamentos da Lilly.",
+    "moreInfoTitle": "Vantagens do club",
+    "moreInfoSpecs": [
+      "Liberdade de não ter mais pelos",
+      "Pele suave, macia e lisa definitivamente",
+      "Fim da foliculite",
+      "Clareamento da pele",
+      "Todas as áreas do corpo (exceto sobrancelhas)",
+      "Feminino e masculino"
+    ],
+    "pricingTitle": "Conheça os planos",
+    "pricing": [
+      {
+        "name": "Lilly Laser Club • 1 sessão a cada 45 dias",
+        "taxes": "Grátis",
+        "membership": "R$ 89,90"
+      },
+      {
+        "name": "Lilly Laser Club • 2 sessões a cada 45 dias",
+        "taxes": "Grátis",
+        "membership": "R$ 139,90"
+      }
+    ],
+    "legalText": "Consulte validade e condições comerciais",
+    "legalExpirationDate": ""
+  },
+  {
+    "id": 3,
+    "slug": "lillybotoclub",
+    "club": "Lilly Boto Club",
+    "bgColor": "var(--color-gold-1)",
+    "titleColor": "var(--color-gold-3)",
+    "description": "No Lilly Boto Club, o cliente se associa, paga mensalidades fixas e aplica toxina botulínica, de primeiríssima qualidade uma ou duas vezes por ano, em uma, duas ou três regiões. São 6 planos de excelente custo benefício e que possibilitam o tratamento de rugas dinâmicas linhas de expressão.",
+    "moreInfoTitle": "Áreas de tratamento",
+    "moreInfoSpecs": [
+      "Testa • Pés de galinha",
+      "Nariz de coelho • Ponta do Nariz",
+      "Linhas periorais • Rugas frontais",
+      "Sobrancelhas • Sorriso gengival",
+      "Efeito Nefertiti • Corporais",
+      "Rejuvenescimento facial"
+    ],
+    "pricingTitle": "Conheça os planos",
+    "pricing": [
+      {
+        "name": "Lilly Boto Club • 1 sessão/1 região",
+        "taxes": "Grátis",
+        "membership": "R$ 44,90"
+      },
+      {
+        "name": "Lilly Boto Club • 1 sessão/2 regiões",
+        "taxes": "Grátis",
+        "membership": "R$ 74,90"
+      },
+      {
+        "name": "Lilly Boto Club • 1 sessão/3 regiões",
+        "taxes": "Grátis",
+        "membership": "R$ 84,90"
+      },
+      {
+        "name": "Lilly Boto Club • 2 sessão/1 região",
+        "taxes": "Grátis",
+        "membership": "R$ 69,90"
+      },
+      {
+        "name": "Lilly Boto Club • 2 sessão/2 regiões",
+        "taxes": "Grátis",
+        "membership": "R$ 119,90"
+      },
+      {
+        "name": "Lilly Boto Club • 2 sessão/3 regiões",
+        "taxes": "Grátis",
+        "membership": "R$ 139,90"
+      }
+    ],
+    "legalText": "Consulte validade e condições comerciais",
+    "legalExpirationDate": ""
+  }
+]

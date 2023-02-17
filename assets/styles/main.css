@@ -1,0 +1,121 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #57697b;
+  display: block;
+  font-size: 100%;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  html, body {
+    overflow: hidden;
+  }
+}
+
+.lillymed-cta {
+  display: block;
+  position: fixed;
+  width: 53px;
+  height: 53px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.lillymed-cta img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .lillymed-cta {
+    width: 87px;
+    height: 87px;
+  }
+}
+
+.cover-wrapper {
+  position: relative;
+}
+
+.cover-wrapper::before {
+  content: '';
+  background-image: linear-gradient(to top, #57697b, transparent);
+  position: absolute;
+  height: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cover-wrapper::before {
+    display: none;
+  }
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+}
+
+.cover.cover--mobile {
+  display: block;
+}
+
+.cover.cover--tablet {
+  display: none;
+}
+
+.cover.cover--desktop {
+  display: none;
+}
+
+@media screen and (orientation: landscape) {
+  .cover.cover--mobile {
+    display: none;
+  }
+
+  .cover.cover--tablet {
+    display: none;
+  }
+
+  .cover.cover--desktop {
+    display: block;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .cover.cover--mobile {
+    display: none;
+  }
+
+  .cover.cover--tablet {
+    display: block;
+  }
+
+  .cover.cover--desktop {
+    display: none;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  .cover.cover--mobile {
+    display: none;
+  }
+
+  .cover.cover--tablet {
+    display: none;
+  }
+
+  .cover.cover--desktop {
+    display: block;
+  }
+}
