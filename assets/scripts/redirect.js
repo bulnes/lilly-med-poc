@@ -50,30 +50,22 @@
   };
 
   const isTimeToShowModal = () => {
-    const storage = localStorage.getItem(storageKey);
-
+    const storage = sessionStorage.getItem(storageKey);
     if (storage) {
-      const { lastAccess } = JSON.parse(storage);
-
-      const now = new Date().getTime();
-      const diff = now - lastAccess;
-
-      if (diff < 1000 * 60 * 60 * 24) {
-        return false;
-      }
-
-      return true;
+      const { answered } = JSON.parse(storage);
+      return !answered;
     }
 
     return true;
   };
 
-  const setTimeAccessed = () => {
-    const lastAccess = new Date().getTime();
-    localStorage.setItem(storageKey, JSON.stringify({ lastAccess }));
+  const setAnswered = () => {
+    sessionStorage.setItem(storageKey, JSON.stringify({ answered: true }));
   };
 
-  if (!window.location.search.includes("redirect=false")) {
+  const isRedirected = !window.location.search.includes("redirect=false");
+
+  if (isRedirected && isTimeToShowModal()) {
     loadCss();
     createHTML();
 
@@ -83,6 +75,8 @@
 
       const modalContainer = document.querySelector(".lilly-redirect");
       modalContainer.remove();
+
+      setAnswered();
     });
   }
 })();
